@@ -82,6 +82,9 @@
             border:2px solid rgb(139, 223, 139);
 
         }
+        href{
+            color:rgb(52, 204, 166);
+        }
         footer{
             text-align: center;
             margin:70px 0px 0px 0px;
@@ -111,13 +114,18 @@
             <img src="https://th.bing.com/th/id/OIP.ZmR1VyFiESF5ocAdL5_JQgHaDt?pid=ImgDet&rs=1"style="width:402px;height:379px">
         </div>
         <div class="search">
-            Enter the symptoms
+            <form action="/action_page.php">
+                <label for="fname">Enter the symptoms</label><br>
+                <input type="text" id="fname" name="fname" value=""><br>
+                
+                <input type="submit" value="Submit">
+              </form>
         </div>
         <div class="appointment">
-            Book your appointment
+            <a href ="http://127.0.0.1:5500/appoint.html" target="_blank">Book your appointment</a>
         </div>
         <div class="track">
-            Track your diet
+            <a href ="/diet" target="_blank">Track your diet</a>
         </div>
         
     </div>
